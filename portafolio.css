@@ -400,13 +400,129 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+    .nav-container {
+        max-width: 1200px;
+        padding: 0 1.5rem;
+    }
+    
+    .navbar {
+        padding: 0.6rem 0;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+    
+    .nav-cta {
+        padding: 0.7rem 1.6rem;
+        font-size: 0.95rem;
+        margin-left: 1rem;
+    }
+    
+    .hero {
+        padding-top: 80px;
+    }
+    
     .portfolio-item {
         grid-template-columns: 1fr;
     }
     
     .portfolio-image {
         min-height: 400px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-container {
+        max-width: 1000px;
+        padding: 0 1.2rem;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-links {
+        gap: 1.3rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    
+    .nav-cta {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+        margin-left: 0.8rem;
+    }
+    
+    .hero {
+        padding-top: 75px;
+    }
+    
+    .hero h1 {
+        font-size: 3.8rem;
+    }
+    
+    .container {
+        max-width: 1000px;
+        padding: 0 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .navbar {
+        padding: 0.4rem 0;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+    
+    .nav-cta {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        margin-left: 0.6rem;
+    }
+    
+    .hero {
+        padding-top: 70px;
+    }
+    
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+    
+    .portfolio-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .portfolio-details {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
     }
 }
 
