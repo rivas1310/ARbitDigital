@@ -1521,6 +1521,16 @@ footer {
     .mobile-menu-btn {
         display: block;
     }
+    
+    nav {
+        padding: 0 1rem;
+        height: auto;
+        min-height: 60px;
+    }
+    
+    .cta-button {
+        display: none; /* Ocultar botón Empezar Ahora en móvil */
+    }
 
     .nav-links {
         position: fixed;
@@ -1538,6 +1548,7 @@ footer {
         z-index: 999;
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         overflow-y: auto;
+        gap: 0;
     }
 
     .nav-links.active {
@@ -1545,18 +1556,20 @@ footer {
     }
 
     .nav-links li {
-        margin: 1rem 0;
+        margin: 0;
         width: 100%;
     }
 
     .nav-links a {
-        font-size: 1.2rem;
-        padding: 1rem 0;
+        font-size: 1.1rem;
+        padding: 1rem;
         display: block;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        color: var(--pure-white);
+        background: transparent;
     }
 
     .nav-links a::before {
@@ -1611,6 +1624,111 @@ footer {
         bottom: 30px;
         right: 20px;
         font-size: 25px;
+    }
+    
+    /* Contact section mobile fixes */
+    .contact {
+        padding: 3rem 0;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .contact-form {
+        padding: 2rem 1.5rem;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    
+    /* Hero section mobile */
+    .hero {
+        padding-top: 70px;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .stat {
+        padding: 1rem;
+        min-width: auto;
+    }
+    
+    /* General mobile container */
+    .container {
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+    
+    /* Services grid mobile */
+    .services-grid,
+    .additional-services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Package cards mobile */
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .package-card {
+        padding: 1.5rem;
+    }
+    
+    /* About section mobile */
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .values-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .values-list li {
+        padding: 1rem;
+        text-align: left;
     }
 }
 
